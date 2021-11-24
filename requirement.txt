@@ -1,0 +1,5 @@
+matplotlib==3.5.0
+matplotlib-inline==0.1.3
+numpy==1.21.4
+pandas==1.3.4
+YahooFinanceQuery==0.1.1
