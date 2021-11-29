@@ -49,6 +49,7 @@ class BuySell:
         if self.capital is not None:
             print('Test Ending Capital: ${:.2f} base on original capital of ${:.2f}'.format(self.capital, self.original_capital))
             print('With {:.2f}% Capital Gain'.format(self.results['Percentage-Capital-Gain'] * 100))
+        self.original_capital = self.capital
 
     def result_Series(self):
         index = ['Num-Trades', 'Total-Dollar-Gain', 'Total-Percentage-Gain', 
