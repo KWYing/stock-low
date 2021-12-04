@@ -25,9 +25,9 @@ class DataLoader:
         # Get a set period of data
         if isinstance(start, str) and isinstance(end, str):
             m = self.data.index.isin(pd.date_range(start, end))
-            return self.data.loc[m]
+            return self.data.loc[m].copy()
         elif isinstance(start, int) and isinstance(end, int):
-            return self.data.iloc[start: end]
+            return self.data.iloc[start: end].copy()
         else:
             print('DataType mismatch!')
         
